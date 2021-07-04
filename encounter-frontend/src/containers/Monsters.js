@@ -1,12 +1,37 @@
-import React, { Component } from 'react'
+import React from 'react'
+// import EncounterForm from './EncounterForm'
+import { MyConsumer } from '../MyContext'
 
-export default class Monsters extends Component {
-    render() {
-        return (
-            <div>
-                <h1>I'm the Monsters Component</h1>
-                {console.log('monster component')}
-            </div>
-        )
-    }
+
+
+function Monsters() {
+    return (
+        <MyConsumer>
+            {context => {
+
+            
+                handleOnClick = (event) => {
+                    
+                }
+
+                const monsters = context.monsters.map((monster, i) => <p key={i}> {monster.name} </p>
+                
+                )
+
+                return (
+                    <div className='Monsters'>
+                        <h1>Encounter</h1>
+                        {/* maybe need this */}
+                        {/* <EncounterButtons /> */}
+                        {this.props.loading ? <h3>loading.....</h3> : monsters}
+                    </div>
+                )
+            }
+        }
+        </MyConsumer>
+    
+    )
 }
+
+
+export default Monsters
