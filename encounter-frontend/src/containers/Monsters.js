@@ -20,10 +20,10 @@ function Monsters() {
 
                 return (
                     <div className='Monsters'>
-                        <h1>Encounter</h1>
+                        <h1>Monsters</h1>
                         {/* maybe need this */}
-                        {/* <EncounterButtons /> */}
-                        {this.props.loading ? <h3>loading.....</h3> : monsters}
+                        {/* <MonsterButton /> */}
+                        {/* {this.props.loading ? <h3>loading.....</h3> : monsters} */}
                     </div>
                 )
             }

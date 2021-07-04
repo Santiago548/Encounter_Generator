@@ -30,6 +30,10 @@ class CreateMonsters < ActiveRecord::Migration[6.1]
       t.string :action_2
       t.string :action_3
       t.string :action_4
+      t.string :loot_1
+      t.string :loot_2
+      t.string :gold
+      t.belongs_to :encounter, null: false, foreign_key: true
 
       t.timestamps
     end
