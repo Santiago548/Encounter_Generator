@@ -1,12 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+// import EncounterForm from './EncounterForm'
+import { MyConsumer } from '../MyContext'
 
-export default class Encounters extends Component {
-    render() {
-        return (
-            <div>
-                <h1>I'm the encounters Component</h1>
-                {console.log('encounter component')}
-            </div>
-        )
-    }
+
+
+export default function Encounters() {
+    return (
+        <MyConsumer>
+            {context =>
+                handleOnClick = (event) => {
+                    
+                }
+            }
+        </MyConsumer>
+    )
 }
