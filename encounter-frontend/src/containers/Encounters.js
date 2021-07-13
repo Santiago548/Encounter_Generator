@@ -14,7 +14,10 @@ function Encounters() {
                     
                 }
 
-                const encounters = context.encounters.map((encounter, i) => <p key={i}> {encounter.name} </p>
+                const encounters = context.encounters.map((encounter, i) => <p key={i}> {encounter.name} 
+                <button id={encounter.id} onClick={handleClick}> x
+                </button>
+                </p>
                 
                 )
 
